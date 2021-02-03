@@ -1,7 +1,6 @@
 from random import randint
 
 startnum = randint(40, 60)
-strnum = int(0)
 
 
 def main():
