@@ -17,7 +17,7 @@ def computer():
     localnum = startnum
     print('The mystery number is', startnum)
     while localnum >= 0:
-        sub = input('do you want to substract 1,2,3,4,5 or 6?')
+        sub = input('Do you want to substract 1,2,3,4,5 or 6?')
         if sub in ('1', '2', '3', '4', '5', '6'):
             localnum = localnum-int(sub)
             print('The number is now', localnum)
@@ -46,7 +46,7 @@ def computer():
             localnum = localnum - compc
             print('The number is now', localnum)
             if localnum <= 0:
-                print('you win')
+                print('You win')
                 quit()
         else:
             print('Please enter a number from 1 to 6')
@@ -55,7 +55,7 @@ def computer():
 
 def twoplayerstart():
     nplayer1 = input('What is your name, Player1?')
-    nplayer2 = input('What is oyur name, Player2?')
+    nplayer2 = input('What is your name, Player2?')
     twoplayermain(nplayer1, nplayer2)
 
 
