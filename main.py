@@ -6,9 +6,11 @@ startnum = randint(40, 60)
 def main():
     print('Welcome to the game of reduction')
     print('You will have to try and reduce 1,2,3,4,5 or 6 from a mystery number')
-    oneortwo = input('Do you want to play against another player or the computer?\n(a)notherplayer,(c)omputer ')
+    oneortwo = input('Do you want to play against another player or the computer?\n(a)notherplayer,(c)omputer,(q)uit ')
     if oneortwo in ('a', 'A', 'anotherplayer'):
         twoplayerstart()
+    elif oneortwo in ('q', 'Q', 'quit'):
+        quit()
     else:
         computer()
 
@@ -64,7 +66,7 @@ def twoplayermain(nplayer1, nplayer2):
     print('The mystery number is', startnum)
     while localnum >= 0:
         print('Pass the device to', nplayer1)
-        player1 = input('Do you want to substract 1,2,3,4,5 or 6?')
+        player1 = str(input('Do you want to substract 1,2,3,4,5 or 6?'))
         if player1 in ('1', '2', '3', '4', '5', '6'):
             localnum = localnum-int(player1)
             print('The number is now', localnum)
